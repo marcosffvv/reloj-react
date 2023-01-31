@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { Link, Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import Home from "./pages/Home";
+import Reloj from "./pages/Reloj";
+import Countdown from "./pages/Countdown";
+import Crono from "./pages/Crono";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <Router>
+      <div className="App">
+
+        <header>
+          <Link to="/">Home</Link>
+          <Link to="/reloj">Reloj Digital</Link>
+          <Link to="/countdown">Cuenta Atrás</Link>
+          <Link to="/cronómetro">Cronómetro</Link>
+        </header>
+
+      <Routes>
+        <Route path="/" element={<Home></Home>}/>
+        <Route path="/reloj" element={<Reloj></Reloj>}/>
+        <Route path="/countdown" element={<Countdown></Countdown>}/>
+        <Route path="/cronómetro" element={<Crono></Crono>}/>
+      </Routes>
+
+      </div>
+    </Router>
   );
 }
-
 export default App;

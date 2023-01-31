@@ -1,0 +1,17 @@
+.crono{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__botones{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        button{
+            width: 100px;
+            height: 30px;
+            margin: 10px;
+        }
+    }
+}

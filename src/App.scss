@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+    background-color: rgb(198, 228, 255);
+    a{
+      padding: 30px;
+      color: black;
+      border: solid 1px rgb(198, 228, 255);
+    }
+    a:hover{
+    background-color: aliceblue;
+    border: solid 1px black;
+    }
+  }
+}
