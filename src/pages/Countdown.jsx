@@ -4,7 +4,7 @@ import "./Countdown.scss";
 const Countdown = () => {
   const [time, setTime] = useState("");
   useEffect(() => {
-    let countDownDate = new Date("February 22, 2023 18:00:00").getTime();
+    let countDownDate = new Date("September 21, 2023 09:00:00").getTime();
     let x = setInterval(() => {
       let today = new Date().getTime();
 
@@ -27,7 +27,7 @@ const Countdown = () => {
   }, []);
   return (
     <div>
-      <h2>Terminamos el bootcamp en:</h2>
+      <h2>Cumplo 1 año como desarrollador en:</h2>
       <h3>{time}</h3>
     </div>
   );
